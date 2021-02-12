@@ -1664,7 +1664,7 @@ class DrawControl(Control):
     last_draw = Dict({
         'type': 'Feature',
         'geometry': None
-    })
+    }).tag(sync=True)
     last_action = Unicode()
 
     _draw_callbacks = Instance(CallbackDispatcher, ())
